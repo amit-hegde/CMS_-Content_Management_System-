@@ -1,0 +1,157 @@
+body{
+   background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 50px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background-color: rgba(159, 190, 146, 0.774);
+}
+
+.navbar-brand a{
+    font-size: 45px;
+    color: rgb(34, 29, 25);
+    text-decoration: none;
+     font-family: 'Big Shoulders Stencil Display', cursive;
+} 
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+
+.action{
+      position: absolute;
+     top: 30px;
+     right: 10px;
+}
+.action form{
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.login{
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background-color: #658d80dc;
+}
+
+.login form{
+    margin:100px auto;
+    padding: 50px;
+    width: 30%;
+    height: auto;
+ background-color: rgba(245, 220, 220, 0.301);
+ /* background-color: rgba(73, 48, 48, 0.541); */
+ border-radius:15px ;
+ border: none;
+}
+
+.login form h1{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    font-family: 'Lobster', cursive;
+    color: rgb(51, 55, 56);
+   border-top:1px groove rgb(231, 188, 188);
+}
+
+.login form hr{
+   /* border-top:1px groove rgb(126, 126, 126); */
+   margin-bottom: 30px;
+}
+
+.login form button{
+   background-color: transparent;
+   border:2px solid #04AA6D;
+   color: #05191b;
+    margin:20px 40% ;
+}
+.box{
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-color: rgba(246, 237, 237, 0.5);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 20px 0px 50px 0px;
+    box-shadow: 1px 1px 10px 1px rgb(142, 162, 163);
+}
+
+.box h1{
+    border-bottom:solid 1px #1b121a67 ;
+    border-left:solid 1px #130c125d  ;
+    font-family: 'Cormorant Garamond', serif;
+    border-radius:15px ;
+    padding: 5px 25px 5px 5px;
+    min-width: 100px;
+    max-width: fit-content;
+}
+
+.box p{
+    padding: 5px;
+    background-color: rgba(246, 238, 238, 0.472);;
+}
+
+
+.table table{
+   
+    border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(233, 217, 217, 0.52);
+}
+.table .tablerows{
+     margin-top: 50px;
+    height: 300px;
+    overflow: scroll;
+}
+.table th,.table td{
+    border: 1px solid rgb(128, 117, 117);
+  padding: 8px;
+    text-align: center;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background-color: #04AA6D;
+  color: white;
+}
+
+.table button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgb(226, 38, 38);
+}
+
+.footer-padding {
+    padding-bottom: 60px;
+}
+
+.footer {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    /* background-color: #1abc9c; */
+}
+
+.footer p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(100, 87, 87);
+}

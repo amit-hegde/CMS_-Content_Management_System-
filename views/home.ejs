@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+
+<% let posts=Data %>
+<% posts.forEach(function(post){ %>
+<div class="box">
+    <h1><%= post.title %> </h1>
+    <p><%= post.content.substring(0,500)+"...... " %> <a href="/post/<%= post._id %>">Read More</a></p>
+</div>
+<%}) %>
+
+<%- include("partials/footer") -%>

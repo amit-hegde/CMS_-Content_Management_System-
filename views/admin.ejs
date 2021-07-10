@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+<div class="action">
+    <form action="/admin/register" method="post">
+        <button type="submit" class="btn btn-dark">Create</button>
+    </form>
+    <form action="/admin/logout" method="post">
+        <button type="submit" class="btn btn-dark">Log-Out</button>
+    </form>
+</div>
+<h1>Admin Panale</h1>
+
+<form action="/Admin" method="POST">
+    <label for="title">Title</label><br>
+    <input type="text" class="form-control" name="Title" id="title" required>
+    <br>
+    <label for="data">Post</label><br>
+    <textarea name="Content" class="form-control" id="data" cols="5" rows="5" required></textarea>
+    <br>
+    <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+<div class="table">
+    <div class="tablerows">
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <th></th>
+            </tr>
+            <% Data.forEach(function(post){ %>
+            <tr>
+                <td><%= post.title %> </td>
+                <td><%= post.content.substring(0,50) %></td>
+                <td>
+                    <form action="/delete" method="POST">
+                        <button type="submit" name="id" value="<%=post._id%> "><i class="far fa-trash-alt"></i></button>
+                    </form>
+                </td>
+            </tr>
+            <% } )%>
+        </table>
+    </div>
+</div>
+<%- include("partials/footer") -%>
